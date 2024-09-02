@@ -37,8 +37,29 @@ const checkLargest = (arr) =>
 
     };
 
-    console.log(max);
-    console.log(min);
+    console.log(`The max number is ${max}`);
+    console.log(`The minimum number is ${min}`);
 }
 
 checkLargest(arrayNum);
+
+
+//check whether a number is divisible by another number 
+//Divisible by 3 is Fizz 
+//Divisble by 5 is Buzz 
+//Divisble by 3 and 5 is FizzBuzz
+
+let testNumber = 3;
+result = [];
+
+function fizzbuzzCalculator(testNumber){
+
+    if(testNumber%3==0){
+        result.push(testNumber);
+
+    }
+
+}
+
+fizzbuzzCalculator(testNumber);
+console.log(result);
