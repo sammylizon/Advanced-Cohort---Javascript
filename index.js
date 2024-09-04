@@ -49,17 +49,28 @@ checkLargest(arrayNum);
 //Divisble by 5 is Buzz 
 //Divisble by 3 and 5 is FizzBuzz
 
-let testNumber = 3;
-result = [];
 
-function fizzbuzzCalculator(testNumber){
 
-    if(testNumber%3==0){
-        result.push(testNumber);
+function fizzbuzzCalculatorToOneHundred(){
 
+    result = [];
+
+    for(let i =1; i < 101; i++){
+
+        if(i % 3 == 0 && i % 5 == 0){
+            result.push("FizzBuzz");
+    
+        } else if(i%3 == 0){
+            result.push("Fizz");
+        }else if(i%5 == 0){
+            result.push("Buzz");
+        } else {
+            result.push(i);
+        }
     }
+
+    console.log(result);
 
 }
 
-fizzbuzzCalculator(testNumber);
-console.log(result);
+fizzbuzzCalculatorToOneHundred();
